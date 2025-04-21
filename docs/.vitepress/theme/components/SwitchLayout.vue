@@ -6,6 +6,11 @@
     <template #doc-before>
       <ArticleMetadata />
     </template>
+    <template #doc-after>
+      <ArticleMetadata />
+      <NolebaseGitChangelog/>
+      <NolebaseGitContributors/>
+    </template>
     <template #doc-top>
       <NolebaseHighlightTargetedHeading />
     </template>
@@ -53,6 +58,12 @@ import { HomeUnderline } from '@theojs/lumen'
 import { HomeFooter } from '@theojs/lumen'
 // @ts-ignore 忽略类型检查，因为 footer-data 组件没有类型声明文件
 import { Footer_Data } from '../utils/footer-data.ts'
+
+
+import {
+  NolebaseGitChangelog, 
+  NolebaseGitContributors 
+} from '@nolebase/vitepress-plugin-git-changelog/client'
 
 import "@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css";
 import { NolebaseHighlightTargetedHeading } from "@nolebase/vitepress-plugin-highlight-targeted-heading/client";
