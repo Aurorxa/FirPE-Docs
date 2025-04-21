@@ -2,7 +2,7 @@ import type { FooterData } from "@theojs/lumen";
 
 export const Footer_Data: FooterData = {
   beian: { icp: "赣ICP备18007921号-1", showIcon: true },
-  author: { name: "杉", link: "https://github.com/834772509" },
+  author: { name: "杉", link: "https://github.com/FirTech" },
   group: [
     {
       title: "相关博客",
